@@ -54,8 +54,10 @@ class SubscriptionsServiceProvider extends ServiceProvider
     public function boot()
     {
         // Publish Resources
-        $this->publishesConfig('gratesami/subscriptions');
-        $this->publishesMigrations('gratesami/subscriptions');
-        ! $this->autoloadMigrations('gratesami/subscriptions') || $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
+        $this->publishes([
+            __DIR__.'/config/courier.php' => config_path('subscriptions.php'),
+        ]);
+
+        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
     }
 }
