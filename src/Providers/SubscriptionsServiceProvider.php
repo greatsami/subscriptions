@@ -39,11 +39,11 @@ class SubscriptionsServiceProvider extends ServiceProvider
         $planSubscriptionUsageModel === PlanSubscriptionUsage::class || $this->app->alias('gratesami.subscriptions.plan_subscription_usage', PlanSubscriptionUsage::class);
 
         // Register console commands
-        $this->commands([
-            MigrateCommand::class => 'command.gratesami.subscriptions.migrate',
-            PublishCommand::class => 'command.gratesami.subscriptions.publish',
-            RollbackCommand::class => 'command.gratesami.subscriptions.rollback',
-        ]);
+        // $this->commands([
+        //     MigrateCommand::class => 'command.gratesami.subscriptions.migrate',
+        //     PublishCommand::class => 'command.gratesami.subscriptions.publish',
+        //     RollbackCommand::class => 'command.gratesami.subscriptions.rollback',
+        // ]);
     }
 
     /**
