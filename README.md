@@ -1,6 +1,9 @@
-# Gratesami Subscriptions
+# Laravel Subscriptions
 
-**Gratesami Subscriptions** is a flexible plans and subscription management system for Laravel, with the required tools to run your SAAS like services efficiently. It's simple architecture, accompanied by powerful underlying to afford solid platform for your business.
+**NOTE** This package is developed by [rinvex](https://github.com/rinvex/laravel-subscriptions). I download it and update it to support laravel 8 and it is test.
+but all copyrights for [rinvex](https://github.com/rinvex/laravel-subscriptions)  
+
+**Subscriptions** is a flexible plans and subscription management system for Laravel, with the required tools to run your SAAS like services efficiently. It's simple architecture, accompanied by powerful underlying to afford solid platform for your business.
 
 ## Considerations
 
