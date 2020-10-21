@@ -28,8 +28,6 @@
         "spatie/laravel-translatable": "^4.5"
     },
     "require-dev": {
-        "codedungeon/phpunit-result-printer": "^0.29",
-        "illuminate/container": "^v8.0",
         "phpunit/phpunit": "^9.4"
     },
     "autoload": {
@@ -39,14 +37,6 @@
         "psr-4": {
             "Gratesami\\Subscriptions\\": "src"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Gratesami\\Subscriptions\\Tests\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit"
     },
     "config": {
         "sort-packages": true,

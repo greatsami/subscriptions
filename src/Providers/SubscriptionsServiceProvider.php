@@ -6,7 +6,6 @@ namespace Gratesami\Subscriptions\Providers;
 
 use Gratesami\Subscriptions\Models\Plan;
 use Illuminate\Support\ServiceProvider;
-use Gratesami\Support\Traits\ConsoleTools;
 use Gratesami\Subscriptions\Models\PlanFeature;
 use Gratesami\Subscriptions\Models\PlanSubscription;
 use Gratesami\Subscriptions\Models\PlanSubscriptionUsage;
@@ -16,8 +15,6 @@ use Gratesami\Subscriptions\Console\Commands\RollbackCommand;
 
 class SubscriptionsServiceProvider extends ServiceProvider
 {
-    use ConsoleTools;
-
     /**
      * The commands to be registered.
      *
