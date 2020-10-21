@@ -63,8 +63,8 @@ class SubscriptionsServiceProvider extends ServiceProvider
     public function boot(): void
     {
         // Publish Resources
-        $this->publishesConfig('gratesami/laravel-subscriptions');
-        $this->publishesMigrations('gratesami/laravel-subscriptions');
-        ! $this->autoloadMigrations('gratesami/laravel-subscriptions') || $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
+        $this->publishesConfig('gratesami/subscriptions');
+        $this->publishesMigrations('gratesami/subscriptions');
+        ! $this->autoloadMigrations('gratesami/subscriptions') || $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
     }
 }

@@ -32,8 +32,8 @@ class MigrateCommand extends Command
         $this->alert($this->description);
 
         $path = config('gratesami.subscriptions.autoload_migrations') ?
-            'vendor/gratesami/laravel-subscriptions/database/migrations' :
-            'database/migrations/gratesami/laravel-subscriptions';
+            'vendor/gratesami/subscriptions/database/migrations' :
+            'database/migrations/gratesami/subscriptions';
 
         if (file_exists($path)) {
             $this->call('migrate', [

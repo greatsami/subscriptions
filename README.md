@@ -12,7 +12,7 @@
 
 1. Install the package via composer:
     ```shell
-    composer require gratesami/laravel-subscriptions
+    composer require gratesami/subscriptions
     ```
 
 2. Publish resources (migrations and config files):
