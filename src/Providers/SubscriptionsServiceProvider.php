@@ -15,16 +15,6 @@ use Gratesami\Subscriptions\Console\Commands\RollbackCommand;
 
 class SubscriptionsServiceProvider extends ServiceProvider
 {
-    /**
-     * The commands to be registered.
-     *
-     * @var array
-     */
-    protected $commands = [
-        MigrateCommand::class => 'command.gratesami.subscriptions.migrate',
-        PublishCommand::class => 'command.gratesami.subscriptions.publish',
-        RollbackCommand::class => 'command.gratesami.subscriptions.rollback',
-    ];
 
     /**
      * Register the application services.
@@ -49,7 +39,11 @@ class SubscriptionsServiceProvider extends ServiceProvider
         $planSubscriptionUsageModel === PlanSubscriptionUsage::class || $this->app->alias('gratesami.subscriptions.plan_subscription_usage', PlanSubscriptionUsage::class);
 
         // Register console commands
-        $this->register($this->commands);
+        $this->commands([
+            MigrateCommand::class => 'command.gratesami.subscriptions.migrate',
+            PublishCommand::class => 'command.gratesami.subscriptions.publish',
+            RollbackCommand::class => 'command.gratesami.subscriptions.rollback',
+        ]);
     }
 
     /**
