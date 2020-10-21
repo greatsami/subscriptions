@@ -31,7 +31,7 @@ class SubscriptionsServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register(): void
+    public function register()
     {
         $this->mergeConfigFrom(realpath(__DIR__.'/../../config/config.php'), 'gratesami.subscriptions');
 
@@ -49,7 +49,7 @@ class SubscriptionsServiceProvider extends ServiceProvider
         $planSubscriptionUsageModel === PlanSubscriptionUsage::class || $this->app->alias('gratesami.subscriptions.plan_subscription_usage', PlanSubscriptionUsage::class);
 
         // Register console commands
-        $this->registerCommands($this->commands);
+        $this->register($this->commands);
     }
 
     /**
@@ -57,7 +57,7 @@ class SubscriptionsServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot(): void
+    public function boot()
     {
         // Publish Resources
         $this->publishesConfig('gratesami/subscriptions');
