@@ -55,9 +55,9 @@ class SubscriptionsServiceProvider extends ServiceProvider
     {
         // Publish Resources
         $this->publishes([
-            __DIR__.'/../config/config.php' => config_path('subscriptions.php'),
+            __DIR__.'/../../config/config.php' => config_path('subscriptions.php'),
         ]);
 
-        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
     }
 }
